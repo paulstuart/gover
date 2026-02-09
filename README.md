@@ -2,16 +2,12 @@
 
 `gover` is a Go application designed to scrape release notes and documentation for various Go versions from `go.dev/doc/go{VERSION}`. The extracted data is then outputted as a JSON file, intended for use in training Large Language Models (LLMs) or for general machine-readable metadata about Go language changes.
 
-## Goal
-
-To generate clean, structured data about Go language evolution, package changes, and new features, providing accurate and expert knowledge for Golang-specific LLMs.
-
 ## Features
 
-*   Scrapes `go.dev/doc/go{VERSION}` pages.
-*   Extracts version overview and categorized changes.
-*   Outputs data in a structured JSON format.
-*   Uses `go-colly` for web scraping.
+* Scrapes `go.dev/doc/go{VERSION}` pages.
+* Extracts version overview and categorized changes.
+* Outputs data in a structured JSON format.
+* Uses `go-colly` for web scraping.
 
 ## Getting Started
 
@@ -30,12 +26,12 @@ This will create an executable named `gover` in the current directory.
 To run the scraper and generate a JSON output file:
 
 ```bash
-./gover -versions -output go_version_data.json
+./gover -output go_version_data.json
 ```
 
 **Flags:**
 
-*   `-output`: The path to the output JSON file. Defaults to `go_version_data.json`.
+* `-output`: The path to the output JSON file. Defaults to `go_version_data.json`.
 
 ### Data Structure
 
@@ -43,6 +39,6 @@ The resulting json file effectively mirrors the hierachical layout of the html f
 
 ## Next Steps / Enhancements
 
-*   Refine HTML parsing to extract more granular and hierarchical data.
-*   Improve error handling and logging.
-*   Add comprehensive unit and integration tests.
+* Refine HTML parsing to extract more granular and hierarchical data (if possible).
+* Improve error handling and logging.
+* Add unit tests.
