@@ -37,9 +37,9 @@ To run the scraper and generate a JSON output file:
 
 *   `-output`: The path to the output JSON file. Defaults to `go_version_data.json`.
 
-### Example Output
+### Data Structure
 
-A sample of the expected JSON output structure can be found in `AGENTS.md`. The output will contain an array of `VersionData` objects, each detailing changes for a specific Go version.
+The resulting json file effectively mirrors the hierachical layout of the html for each major release note at https://go.dev/doc/devel/release, so it comprises a list of released versions (descending from latest release), with the release version and date and then the various aspects of Go that have been changed, e.g., tooling, packages, functions, etc.
 
 ## Project Structure
 
