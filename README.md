@@ -41,16 +41,8 @@ To run the scraper and generate a JSON output file:
 
 The resulting json file effectively mirrors the hierachical layout of the html for each major release note at https://go.dev/doc/devel/release, so it comprises a list of released versions (descending from latest release), with the release version and date and then the various aspects of Go that have been changed, e.g., tooling, packages, functions, etc.
 
-## Project Structure
-
-*   `cmd/gover`: Contains the `main.go` file, the entry point for the application.
-*   `pkg/model`: Defines the Go structs used to model the scraped data for JSON output.
-*   `pkg/scraper`: Contains the core web scraping logic using the `go-colly` library.
-*   `internal/config`: (Planned for future use) For application configuration.
-
 ## Next Steps / Enhancements
 
 *   Refine HTML parsing to extract more granular and hierarchical data.
 *   Improve error handling and logging.
 *   Add comprehensive unit and integration tests.
-*   Enhance example code extraction.
