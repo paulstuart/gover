@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/gocolly/colly/v2"
-	"github.com/paulstuart/gollm/gover/pkg/model"
+	"github.com/paulstuart/gover/pkg/model"
 )
 
 // ScrapeReleaseHistory scrapes https://go.dev/doc/devel/release to get all major Go versions and their release dates.
@@ -37,7 +37,7 @@ func ScrapeReleaseHistory() (map[string]string, error) {
 		text := e.Text
 		matches := versionDateRe.FindStringSubmatch(text)
 		if len(matches) >= 3 {
-			version := matches[1]    // e.g., "go1.24"
+			version := matches[1]     // e.g., "go1.24"
 			releaseDate := matches[2] // e.g., "2025-02-11"
 
 			mu.Lock()

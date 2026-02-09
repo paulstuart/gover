@@ -35,7 +35,6 @@ To run the scraper and generate a JSON output file:
 
 **Flags:**
 
-*   `-versions`: A comma-separated list of Go versions to scrape (e.g., `go1.25,go1.26`). Defaults to `go1.25,go1.26`.
 *   `-output`: The path to the output JSON file. Defaults to `go_version_data.json`.
 
 ### Example Output
@@ -52,8 +51,6 @@ A sample of the expected JSON output structure can be found in `AGENTS.md`. The 
 ## Next Steps / Enhancements
 
 *   Refine HTML parsing to extract more granular and hierarchical data.
-*   Implement dynamic discovery of Go versions rather than hardcoding.
 *   Improve error handling and logging.
 *   Add comprehensive unit and integration tests.
 *   Enhance example code extraction.
-*   Scrape release dates from a reliable source.

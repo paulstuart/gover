@@ -12,7 +12,7 @@ import (
 	"strconv"
 	"strings" // Added missing import
 
-	"github.com/paulstuart/gollm/gover/pkg/scraper"
+	"github.com/paulstuart/gover/pkg/scraper"
 )
 
 func main() {

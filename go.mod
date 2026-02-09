@@ -1,4 +1,4 @@
-module github.com/paulstuart/gollm/gover
+module github.com/paulstuart/gover
 
 go 1.25.4
 
