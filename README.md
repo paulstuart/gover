@@ -30,7 +30,7 @@ This will create an executable named `gover` in the current directory.
 To run the scraper and generate a JSON output file:
 
 ```bash
-./gover -versions go1.25,go1.26 -output go_version_data.json
+./gover -versions -output go_version_data.json
 ```
 
 **Flags:**
